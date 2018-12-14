@@ -11,14 +11,18 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         int num = 0;
         int max = 0;
+        int i=0;
+        int index=0;
         System.out.println("Вводите последовательность чисел через Enter");
         do {
             num = scanner.nextInt();
+            i++;
             if (max < num) {
                 max = num;
+                index = i;
             }
             if (num == 0) {
-                System.out.println("Максимальное число = " + max);
+                System.out.println("Максимальное число = " + max + "; Индекс этого числа = " + index);
             }
         }
         while (num != 0);
