@@ -24,7 +24,7 @@ public class Main {
         for (int i =0; i < n; i++){
             if (a[i] >= max){
                 max = a[i];
-                j=i + 1;
+                j = i + 1;
             }
         }
         System.out.print("Максимум: " + max + " Его координаты: "+ j);
