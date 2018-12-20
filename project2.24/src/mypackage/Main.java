@@ -21,11 +21,11 @@ public class Main {
             System.out.print(a[i]+" ");
         }
         System.out.print("\n");
-        int max = 0, j = 0, k=0;
+        int k = 0;
         for (int i = 0; i < n; i++){
             if (i != 0 && i != (n-1) && a[i] >= a[i-1] && a[i] >= a[i+1]){
-                max = a[i];
-                j = i + 1;
+                int max = a[i];
+                int j = i + 1;
                 k++;
                 System.out.print(k + "-й локальный максимум: " + max + " Его координаты: "+ j + "\n");
             }
