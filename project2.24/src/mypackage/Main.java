@@ -20,5 +20,13 @@ public class Main {
             a[i]=(int)(Math.random()*10);
             System.out.print(a[i]+" ");
         }
+        int max = 0, j = 0;
+        for (int i =0; i < n; i++){
+            if (a[i] >= max){
+                max = a[i];
+                j++;
+            }
+        }
+        System.out.print("Максимум: " + max + " Его координаты: "+ j);
     }
 }
