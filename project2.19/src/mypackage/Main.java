@@ -40,7 +40,7 @@ public class Main {
         }
         int i=0;
         for (int z=0; z<2*n; z=z+2){
-            if (arrX[i]<arrX[i]){
+            if (arrX[i]<arrY[i]){
                 arrZ[z] = arrX[i];
                 arrZ[z+1]=arrY[i];
             }
