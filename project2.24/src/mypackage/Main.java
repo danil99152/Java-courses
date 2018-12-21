@@ -15,19 +15,36 @@ public class Main {
         System.out.print("Введите размерность матрицы: ");
         Scanner scan = new Scanner(System.in);
         Integer n = scan.nextInt();
-        int[] a = new int[n];
+        int[][] a = new int[n][n];
         for (int i = 0; i < a.length; i++){
-            a[i]=(int)(Math.random()*10);
-            System.out.print(a[i]+" ");
+            for (int j = 0; j < a.length; j++) {
+                a[i][j] = (int) (Math.random() * 10);
+                System.out.print(a[i][j] + " ");
+            }
+            System.out.println();
         }
         System.out.print("\n");
         int k = 0;
-        for (int i = 0; i < n; i++){
-            if (i != 0 && i != (n-1) && a[i] >= a[i-1] && a[i] >= a[i+1]){
-                int max = a[i];
-                int j = i + 1;
-                k++;
-                System.out.print(k + "-й локальный максимум: " + max + " Его координаты: "+ j + "\n");
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                if (i != 0 &&
+                    i != (n - 1) &&
+                    j != 0 &&
+                    j != (n - 1) &&
+                    a[i][j] >= a[i - 1][j] &&
+                    a[i][j] >= a[i + 1][j] &&
+                    a[i][j] >= a[i][j - 1] &&
+                    a[i][j] >= a[i][j + 1] &&
+                    a[i][j] >= a[i - 1][j - 1] &&
+                    a[i][j] >= a[i + 1][j + 1] &&
+                    a[i][j] >= a[i - 1][j + 1] &&
+                    a[i][j] >= a[i + 1][j - 1]) {
+                    int max = a[i][j];
+                    int m = i + 1;
+                    int p = j +1;
+                    k++;
+                    System.out.print(k + "-й локальный максимум: " + max + " Его координаты: " + m + ", " + p + "\n");
+                }
             }
         }
     }
