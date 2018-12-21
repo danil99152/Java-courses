@@ -31,19 +31,19 @@ public class Main {
                     i != (n - 1) &&
                     j != 0 &&
                     j != (n - 1) &&
-                    a[i][j] >= a[i - 1][j] &&
-                    a[i][j] >= a[i + 1][j] &&
-                    a[i][j] >= a[i][j - 1] &&
-                    a[i][j] >= a[i][j + 1] &&
-                    a[i][j] >= a[i - 1][j - 1] &&
-                    a[i][j] >= a[i + 1][j + 1] &&
-                    a[i][j] >= a[i - 1][j + 1] &&
-                    a[i][j] >= a[i + 1][j - 1]) {
+                    a[i][j] > a[i - 1][j] &&
+                    a[i][j] > a[i + 1][j] &&
+                    a[i][j] > a[i][j - 1] &&
+                    a[i][j] > a[i][j + 1] &&
+                    a[i][j] > a[i - 1][j - 1] &&
+                    a[i][j] > a[i + 1][j + 1] &&
+                    a[i][j] > a[i - 1][j + 1] &&
+                    a[i][j] > a[i + 1][j - 1]) {
                     int max = a[i][j];
                     int m = i + 1;
                     int p = j +1;
                     k++;
-                    System.out.print(k + "-й локальный максимум: " + max + " Его координаты: " + m + ", " + p + "\n");
+                    System.out.println(k + "-й локальный максимум: " + max + " Его координаты: x: " + p + ", y: " + m);
                 }
             }
         }
