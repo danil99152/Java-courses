@@ -24,11 +24,32 @@ public class Main {
             System.out.println();
         }
         System.out.print("\n");
-        int k = 0;
         for (int j = 0; j < n; j++) {
             for (int i = 0; i < n; i++) {
                 if (a[i][j] <= a[i+1][j]) {continue;}
                 else{
+                    if (i==0 && a[i][j] <= a[i+1][j]) {continue;}
+                    else if (a[i][j] > a[i+1][j]){
+                        if (a[i][j] > a[i][j+1]){
+                            if (a[i][j] > a[i+1][j+1]) {
+                                if (a[i][j] > a[i + 1][j - 1] && j > 0) {
+                                    int max = a[i][j];
+                                    System.out.println("локальный максимум: " + max + " Его координаты: x: " + (j + 1) + ", y: " + (i + 1));
+                                }
+                            }
+                        }
+                    }
+                    if (j==0 && a[i][j] <= a[i][j+1]) {continue;}
+                    else if (a[i][j] > a[i][j+1]){
+                        if (a[i][j] > a[i+1][j]){
+                            if (a[i][j] > a[i+1][j+1]) {
+                                if (a[i][j] > a[i - 1][j + 1] && i > 0) {
+                                    int max = a[i][j];
+                                    System.out.println("локальный максимум: " + max + " Его координаты: x: " + (j + 1) + ", y: " + (i + 1));
+                                }
+                            }
+                        }
+                    }
                     if (i!=0 && a[i][j] <= a[i-1][j]) {continue;}
                     else if(i!=0 && a[i][j] > a[i-1][j]) {
                         if (a[i][j] <= a[i][j+1]){continue;}
@@ -37,15 +58,14 @@ public class Main {
                             else if (j!=0 && a[i][j-1] < a[i][j]){
                                 if (a[i][j]<=a[i+1][j+1]){continue;}
                                 else {
-                                    if (a[i][j]<=a[i-1][j-1] && i!=0 && j!=0){continue;}
-                                    else if(a[i][j]>a[i-1][j-1] && i!=0 && j!=0){
-                                        if (a[i][j]<=a[i+1][j-1] && j!=0){continue;}
-                                        else if (a[i][j]>a[i+1][j-1] && j!=0){
-                                            if (a[i][j]<=a[i-1][j+1] && i!=0){continue;}
-                                            else if (a[i][j]>a[i-1][j+1] && i!=0){
+                                    if (a[i][j]<=a[i-1][j-1]){continue;}
+                                    else if(a[i][j]>a[i-1][j-1]){
+                                        if (a[i][j]<=a[i+1][j-1]){continue;}
+                                        else if (a[i][j]>a[i+1][j-1]){
+                                            if (a[i][j]<=a[i-1][j+1]){continue;}
+                                            else if (a[i][j]>a[i-1][j+1]){
                                                 int max = a[i][j];
-                                                k++;
-                                                System.out.println(k + "-й локальный максимум: " + max + " Его координаты: x: " + (j+1) + ", y: " + (i+1));
+                                                System.out.println("локальный максимум: " + max + " Его координаты: x: " + (j+1) + ", y: " + (i+1));
                                             }
                                         }
                                     }
