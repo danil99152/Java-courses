@@ -15,9 +15,9 @@ public class Main {
         System.out.print("Введите размерность матрицы: ");
         Scanner scan = new Scanner(System.in);
         Integer n = scan.nextInt();
-        int[][] a = new int[n][n];
-        for (int i = 0; i < a.length; i++){
-            for (int j = 0; j < a.length; j++) {
+        int[][] a = new int[n+1][n+1];
+        for (int i = 0; i < n; i++){
+            for (int j = 0; j < n; j++) {
                 a[i][j] = (int) (Math.random() * 10);
                 System.out.print(a[i][j] + " ");
             }

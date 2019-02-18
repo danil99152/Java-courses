@@ -14,10 +14,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/mypackage/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
-              <caret line="47" column="47" selection-start-line="47" selection-start-column="47" selection-end-line="47" selection-end-column="47" />
+            <state relative-caret-position="190">
+              <caret line="31" column="65" selection-start-line="31" selection-start-column="65" selection-end-line="31" selection-end-column="65" />
               <folding>
-                <element signature="e#0#1833#0" expanded="true" />
+                <element signature="e#0#2634#0" expanded="true" />
                 <element signature="imports" expanded="true" />
               </folding>
             </state>
@@ -109,7 +109,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22725000" />
+    <option name="totallyTimeSpent" value="23267000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -152,10 +152,10 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/mypackage/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="47" column="47" selection-start-line="47" selection-start-column="47" selection-end-line="47" selection-end-column="47" />
+        <state relative-caret-position="190">
+          <caret line="31" column="65" selection-start-line="31" selection-start-column="65" selection-end-line="31" selection-end-column="65" />
           <folding>
-            <element signature="e#0#1833#0" expanded="true" />
+            <element signature="e#0#2634#0" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>
