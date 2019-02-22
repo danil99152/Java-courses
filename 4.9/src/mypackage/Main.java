@@ -8,21 +8,15 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-public class Main {
+public class Main extends dictionary {
 
     public static void main(String[] args) {
         System.out.print("Введите предложение:\n");
         Scanner scanner = new Scanner(System.in);
         String str = scanner.nextLine();
         Map<String, Integer> wordCounts = new HashMap<>();
-
-        for (String word : str.split("[^A-Za-zА-Яа-я]")) {
-            if (word.length() > 0) {
-                wordCounts.put(word, wordCounts.getOrDefault(word, 0) + 1);
-            }
-        }
-
-        System.out.println(wordCounts);
+    //    dictionary dictionary = new dictionary();
+        dictionary(str);
     }
 }
 
