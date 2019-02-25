@@ -8,7 +8,6 @@ import java.util.*;
 public class Text {
 
     final static EnumSet<Punctuation> sentencePunctuation = EnumSet.range(Punctuation.EXCLAMATION, Punctuation.DISAMBIGUATION);
-    final static EnumSet<Punctuation> nonSentencePunctuation = EnumSet.complementOf(sentencePunctuation);
     final static EnumSet<Punctuation> allPunctuation = EnumSet.allOf(Punctuation.class);
 
     private String fileAddress;

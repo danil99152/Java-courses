@@ -22,7 +22,6 @@ public class Main {
         String text = currentText.getWholeText();
 
         Map<String, Integer> wordCounts = new HashMap<>();
-
         int i = 0;
         for (String word : text.split("[^A-Za-zА-Яа-я]")) {
             if (word.length() > 0) {

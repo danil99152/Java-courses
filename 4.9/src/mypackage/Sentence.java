@@ -1,7 +1,6 @@
 package mypackage;
 
 import java.util.HashSet;
-import java.util.Map;
 import java.util.Set;
 
 public class Sentence {
@@ -11,10 +10,6 @@ public class Sentence {
 
     public Sentence(String string) {
         value = string;
-    }
-
-    public String getValue() {
-        return value;
     }
 
     public Set<Word> getWords(){
@@ -43,15 +38,6 @@ public class Sentence {
             return wordsOfSentence;
         }
     }
-
-    public boolean hasSimilarWords(Sentence sentence, Map<Word, Set<Sentence>> wordRange){
-        for (Word word : sentence.getWords()){
-            if (wordRange.get(word).contains(this))
-                return true;
-        }
-        return false;
-    }
-
 
     @Override
     public String toString() {

@@ -7,10 +7,6 @@ public class Word {
         value = string;
     }
 
-    public String getValue() {
-        return value;
-    }
-
     @Override
     public String toString() {
         return value;

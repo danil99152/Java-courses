@@ -62,7 +62,7 @@ public enum Punctuation {
 
     private char sign;
 
-    private Punctuation(char sign) {
+    Punctuation(char sign) {
         this.sign = sign;
     }
 
