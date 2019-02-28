@@ -9,7 +9,6 @@ public class Student {
     public Student(String name) {
         this.name=name;
         this.point=new ArrayList<Integer>();
-
     }
 
     public void addPoint(int point) {
