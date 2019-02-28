@@ -10,14 +10,15 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.Scanner;
+import java.util.Set;
 
 public class Main {
     public static void main(String[] args) {
 
-        ArrayList<Student> students = new ArrayList<>();
-        ArrayList<Subject> subjects = new ArrayList<>();
+        Set<Student> students = new HashSet<>();
+        Set<Subject> subjects = new HashSet<>();
 
         File file1 = new File("C:\\Users\\Danil\\IdeaProjects\\3.9\\src\\mypackage\\Input.txt");
 
