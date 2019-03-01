@@ -1,0 +1,6 @@
+Vlad 3
+Ivan 4
+Matvey 4
+Vlad 3.6666666666666665
+Ivan 4.333333333333333
+Matvey 4.0
